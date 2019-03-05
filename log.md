@@ -10,6 +10,7 @@ https://stackoverflow.com/questions/39091505/i-receive-a-uncaught-typeerror-cann
 
 It was coming because of a for loop that created multiple event listeners for a particular element and even after the element was removed, the remaining instances of the events were trying to remove the element which was already removed, hence the error.
 
-```the root of the problem is that you're calling thaticon(e) every time you add a list item, which means you're adding a new event listener every time it runs that loop. When you click the remove button It deletes the element the first time, then returns an error when it tries again and it doesn't exist. (Look at your for loop - if you add multiple Event Listeners they will stack).```
+>the root of the problem is that you're calling thaticon(e) every time you add a list item, which means you're adding a new event listener every time it runs that loop. When you click the remove button It deletes the element the first time, then returns an error when it tries again and it doesn't exist. (Look at your for loop - if you add multiple Event Listeners they will stack).
+
 
 **Link to work:** [Todo list](https://github.com/RaunaqChawhan/Todo-List)
