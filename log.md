@@ -1,6 +1,6 @@
 # 100 Days Of Code - Log
 
-### Day 32: 5th March 2019
+### Day 33: 5th March 2019
 
 
 **Today's Progress**: I worked on my Todo list app and also familiarised myself with git commands and pushed my Todo list code to GitHub. The app is still not complete and will be working on it.
