@@ -1,30 +1,15 @@
 # 100 Days Of Code - Log
 
-### Day 0: February 30, 2016 (Example 1)
-##### (delete me or comment me out)
-
-**Today's Progress**: Fixed CSS, worked on canvas functionality for the app.
-
-**Thoughts:** I really struggled with CSS, but, overall, I feel like I am slowly getting better at it. Canvas is still new for me, but I managed to figure out some basic functionality.
-
-**Link to work:** [Calculator App](http://www.example.com)
-
-### Day 0: February 30, 2016 (Example 2)
-##### (delete me or comment me out)
-
-**Today's Progress**: Fixed CSS, worked on canvas functionality for the app.
-
-**Thoughts**: I really struggled with CSS, but, overall, I feel like I am slowly getting better at it. Canvas is still new for me, but I managed to figure out some basic functionality.
-
-**Link(s) to work**: [Calculator App](http://www.example.com)
+### Day 32: 5th March 2019
 
 
-### Day 1: June 27, Monday
+**Today's Progress**: I worked on my Todo list app and also familiarised myself with git commands and pushed my Todo list code to GitHub. The app is still not complete and will be working on it.
 
-**Today's Progress**: I've gone through many exercises on FreeCodeCamp.
+**Thoughts:** I completed the delete functionality on this app which lets us delete the task once finished. While implementing the delete functionality, I was stuck at an error : **_'Uncaught TypeError: Cannot read property 'removeChild' of null'_**. Though the child element was getting removed, seeing this error on console was something that cannot be ignored. So, I searched for similar kind of an issue on stackoverflow and came across this question: 
+https://stackoverflow.com/questions/39091505/i-receive-a-uncaught-typeerror-cannot-read-property-removechild-of-null-err
 
-**Thoughts** I've recently started coding, and it's a great feeling when I finally solve an algorithm challenge after a lot of attempts and hours spent.
+It was coming because of a for loop that created multiple event listeners for a particular element and even after the element was removed, the remaining instances of the events were trying to remove the element which was already removed, hence the error.
 
-**Link(s) to work**
-1. [Find the Longest Word in a String](https://www.freecodecamp.com/challenges/find-the-longest-word-in-a-string)
-2. [Title Case a Sentence](https://www.freecodecamp.com/challenges/title-case-a-sentence)
+```the root of the problem is that you're calling thaticon(e) every time you add a list item, which means you're adding a new event listener every time it runs that loop. When you click the remove button It deletes the element the first time, then returns an error when it tries again and it doesn't exist. (Look at your for loop - if you add multiple Event Listeners they will stack).```
+
+**Link to work:** [Todo list](https://github.com/RaunaqChawhan/Todo-List)
