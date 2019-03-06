@@ -1,6 +1,15 @@
 # 100 Days Of Code - Log
 
-### Day 33: 5th March 2019
+### Day 34: 7th March 2019
+
+**Today's Progress**: I picked up where I left my Todo list app yesterday and was successful in partially implementing the edit funtionality.
+
+
+**Link to work:** [Todo list](https://github.com/RaunaqChawhan/Todo-List/tree/a42e8d1f43153ec9a920924989fcbcab239fa825)
+
+
+
+### Day 33: 6th March 2019
 
 
 **Today's Progress**: I worked on my Todo list app and also familiarised myself with git commands and pushed my Todo list code to GitHub. The app is still not complete and will be working on it.
